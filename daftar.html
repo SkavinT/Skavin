@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+
+</head>
+<body>
+    <h1>Universitas Mdp</h1>
+    <hr>
+    <a href="index.html"> Back</a>
+    <hr>
+
+    <h2>Pendaftaran Mahasiswa Baru</h2>
+
+    <form action="proses.php" method="post">
+        Nama Calon Mahasiswa <br>
+        <input type="text" name="nama" 
+        id="nama" required>
+        <br>
+        Tanggal Lahir
+        <br>
+        <input type="date" name="tgl_lahir" id="tgl_Lahir">
+        <br>
+        Jenis Kelamin
+        <!-- id harus tidak sama dengan yg lain unique -->
+        <br>
+        <input type="radio" name="jk" value="L" id="jkl" checked> Laki-Laki
+        <br>
+        <input type="radio" name="jk" value="P" id="jkp"> Perempuan
+        <br>
+        Jalur Penerimaan
+        <br>
+        <select name="jp" id="jp">
+            <option value="JTT">Jalur Tanpa Test</option>
+            <option value="JT">Jalur Test</option>
+            <option value="JB">Jalur Beasiswa</option>
+        </select>
+        <br>
+        <br>
+        <button type="Simpan">SAVE</button>
+
+    </form>
+</body>
+</html>
