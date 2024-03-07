@@ -35,6 +35,10 @@ body{
         width: 50%;
         float: left ;
     }
+    .col-lg4{
+        width: 33.33%;
+        float: left;
+    }
 }
 
 .txt1{
